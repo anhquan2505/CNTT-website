@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin tức | Trung Tâm Công Nghệ Thông Tin | Co-opBank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Top Alert Bar -->
+    <div class="bg-blue-900 text-white py-2 px-4 text-sm">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <span><i class="fas fa-phone-alt mr-1"></i> Hotline: 1800 1234</span>
+                <span><i class="fas fa-envelope mr-1"></i> support@coopbank.com.vn</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#" class="hover:text-blue-200"><i class="fas fa-globe mr-1"></i> English</a>
+                <a href="#" class="hover:text-blue-200"><i class="fas fa-user mr-1"></i> Đăng nhập</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="images/download.jpg" alt="Co-opBank Logo" class="h-16 w-auto">
+                <div class="ml-6 hidden lg:block">
+                    <h1 class="text-xl font-bold text-blue-900">TRUNG TÂM CÔNG NGHỆ THÔNG TIN</h1>
+                    <p class="text-sm text-gray-600">Co-opBank - Đổi mới sáng tạo - Kết nối giá trị</p>
+                </div>
+            </div>
+            
+            <div class="flex items-center space-x-4">
+                <button class="lg:hidden text-blue-900">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+                <div class="hidden lg:flex items-center space-x-6">
+                    <a href="index.html" class="font-medium text-gray-600 hover:text-blue-700 animated-underline">Trang chủ</a>
+                    <a href="about.html" class="font-medium text-gray-600 hover:text-blue-700 animated-underline">Giới thiệu</a>
+                    <a href="services.html" class="font-medium text-gray-600 hover:text-blue-700 animated-underline">Dịch vụ</a>
+                    <a href="solutions.html" class="font-medium text-gray-600 hover:text-blue-700 animated-underline">Giải pháp</a>
+                    <a href="news.html" class="font-medium text-blue-900 hover:text-blue-700 animated-underline">Tin tức</a>
+                    <a href="contact.html" class="font-medium text-gray-600 hover:text-blue-700 animated-underline">Liên hệ</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-10"></div>
+        <div class="container mx-auto px-4 py-20 relative">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">Tin Tức & Sự Kiện</h1>
+                <p class="text-xl text-blue-100 max-w-3xl mx-auto leading-relaxed">
+                    Cập nhật những tin tức mới nhất về công nghệ ngân hàng và các sự kiện của Trung tâm CNTT Co-opBank
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured News -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold gradient-text mb-6">Tin tức nổi bật</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto text-lg">Những tin tức mới nhất và quan trọng nhất</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden transition-all duration-300 news-card shadow-lg hover:shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop&crop=center" alt="Digital Banking" class="w-full h-64 object-cover">
+                    <div class="p-8">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Công nghệ mới</span>
+                            <span class="text-gray-500 text-sm ml-auto">15/06/2023</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4 news-title">Co-opBank ra mắt ví điện tử tích hợp AI</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Co-opBank chính thức ra mắt ví điện tử thế hệ mới với tính năng nhận diện giọng nói và hỗ trợ ảo thông minh. Đây là bước tiến quan trọng trong hành trình chuyển đổi số của ngân hàng.</p>
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="text-blue-900 font-medium hover:underline flex items-center">
+                                Đọc tiếp <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <i class="fas fa-eye mr-1"></i>
+                                <span>2,450 lượt xem</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden transition-all duration-300 news-card shadow-lg hover:shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=600&h=400&fit=crop&crop=center" alt="Blockchain Solution" class="w-full h-64 object-cover">
+                    <div class="p-8">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Giải pháp</span>
+                            <span class="text-gray-500 text-sm ml-auto">02/06/2023</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4 news-title">Giải pháp chống gian lận bằng công nghệ blockchain</h3>
+                        <p class="text-gray-600 mb-6 leading-relaxed">Trung tâm CNTT Co-opBank đã triển khai thành công hệ thống chống gian lận dựa trên nền tảng blockchain, giúp tăng cường bảo mật và minh bạch trong các giao dịch tài chính.</p>
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="text-blue-900 font-medium hover:underline flex items-center">
+                                Đọc tiếp <i class="fas fa-arrow-right ml-2"></i>
+                            </a>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <i class="fas fa-eye mr-1"></i>
+                                <span>1,890 lượt xem</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-12">
+                <h2 class="text-3xl font-bold gradient-text">Tin tức mới nhất</h2>
+                <div class="flex space-x-2">
+                    <button class="px-4 py-2 bg-blue-900 text-white rounded-lg hover:bg-blue-800">Tất cả</button>
+                    <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300">Công nghệ</button>
+                    <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300">Sự kiện</button>
+                    <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300">Giải pháp</button>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden transition-all duration-300 news-card shadow-lg hover:shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop&crop=center" alt="Cloud Partnership" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded">Hợp tác</span>
+                            <span class="text-gray-500 text-sm ml-auto">20/05/2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3 news-title">Hợp tác với Google Cloud phát triển ngân hàng số</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">Co-opBank và Google Cloud công bố hợp tác chiến lược trong phát triển nền tảng ngân hàng số thế hệ mới...</p>
+                        <a href="#" class="text-blue-900 font-medium hover:underline flex items-center">
+                            Đọc tiếp <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden transition-all duration-300 news-card shadow-lg hover:shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=600&h=400&fit=crop&crop=center" alt="AI Technology" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-orange-100 text-orange-800 text-xs font-medium px-2.5 py-0.5 rounded">AI/ML</span>
+                            <span class="text-gray-500 text-sm ml-auto">15/05/2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3 news-title">Ứng dụng AI trong phát hiện gian lận tài chính</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">Trung tâm CNTT Co-opBank đã triển khai thành công hệ thống AI phát hiện gian lận với độ chính xác 99.5%...</p>
+                        <a href="#" class="text-blue-900 font-medium hover:underline flex items-center">
+                            Đọc tiếp <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden transition-all duration-300 news-card shadow-lg hover:shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop&crop=center" alt="Data Center" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Hạ tầng</span>
+                            <span class="text-gray-500 text-sm ml-auto">10/05/2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3 news-title">Khánh thành trung tâm dữ liệu mới</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">Co-opBank chính thức khánh thành trung tâm dữ liệu mới đạt chuẩn Tier III với công suất xử lý gấp 5 lần...</p>
+                        <a href="#" class="text-blue-900 font-medium hover:underline flex items-center">
+                            Đọc tiếp <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden transition-all duration-300 news-card shadow-lg hover:shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop&crop=center" alt="Mobile Banking" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Sản phẩm</span>
+                            <span class="text-gray-500 text-sm ml-auto">05/05/2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3 news-title">Cập nhật ứng dụng Mobile Banking với tính năng mới</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">Ứng dụng Mobile Banking Co-opBank được cập nhật với nhiều tính năng mới như thanh toán QR, chuyển tiền nhanh...</p>
+                        <a href="#" class="text-blue-900 font-medium hover:underline flex items-center">
+                            Đọc tiếp <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden transition-all duration-300 news-card shadow-lg hover:shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=600&h=400&fit=crop&crop=center" alt="Cybersecurity" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">Bảo mật</span>
+                            <span class="text-gray-500 text-sm ml-auto">01/05/2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3 news-title">Tăng cường bảo mật hệ thống ngân hàng</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">Co-opBank triển khai các biện pháp bảo mật mới nhất để bảo vệ thông tin khách hàng và giao dịch tài chính...</p>
+                        <a href="#" class="text-blue-900 font-medium hover:underline flex items-center">
+                            Đọc tiếp <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden transition-all duration-300 news-card shadow-lg hover:shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop&crop=center" alt="Cloud Computing" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded">Cloud</span>
+                            <span class="text-gray-500 text-sm ml-auto">25/04/2023</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-800 mb-3 news-title">Chuyển đổi sang nền tảng điện toán đám mây</h3>
+                        <p class="text-gray-600 mb-4 leading-relaxed">Co-opBank hoàn thành việc chuyển đổi toàn bộ hệ thống lên nền tảng điện toán đám mây, tăng hiệu suất 300%...</p>
+                        <a href="#" class="text-blue-900 font-medium hover:underline flex items-center">
+                            Đọc tiếp <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="bg-blue-900 text-white font-bold py-3 px-8 rounded-lg hover:bg-blue-800 transition duration-300">
+                    Xem thêm tin tức <i class="fas fa-arrow-right ml-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold gradient-text mb-6">Sự kiện sắp diễn ra</h2>
+                <p class="text-gray-600 max-w-3xl mx-auto text-lg">Các sự kiện và hội thảo công nghệ quan trọng</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-2xl border border-blue-100">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-calendar-alt text-blue-900"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-blue-900">Hội thảo Fintech 2024</h3>
+                            <p class="text-sm text-gray-600">15/01/2024 - 16/01/2024</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">Hội thảo về công nghệ tài chính với sự tham gia của các chuyên gia hàng đầu trong lĩnh vực ngân hàng số.</p>
+                    <button class="bg-blue-900 text-white px-4 py-2 rounded-lg hover:bg-blue-800 transition">
+                        Đăng ký tham gia
+                    </button>
+                </div>
+                
+                <div class="bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl border border-green-100">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-green-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-users text-green-900"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-green-900">Workshop AI/ML</h3>
+                            <p class="text-sm text-gray-600">20/01/2024</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">Workshop thực hành về trí tuệ nhân tạo và machine learning trong lĩnh vực ngân hàng.</p>
+                    <button class="bg-green-900 text-white px-4 py-2 rounded-lg hover:bg-green-800 transition">
+                        Đăng ký tham gia
+                    </button>
+                </div>
+                
+                <div class="bg-gradient-to-br from-purple-50 to-violet-50 p-8 rounded-2xl border border-purple-100">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-purple-100 p-3 rounded-full mr-4">
+                            <i class="fas fa-trophy text-purple-900"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-purple-900">Hackathon Co-opBank</h3>
+                            <p class="text-sm text-gray-600">25/01/2024 - 27/01/2024</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">Cuộc thi lập trình hackathon với chủ đề "Sáng tạo giải pháp ngân hàng số".</p>
+                    <button class="bg-purple-900 text-white px-4 py-2 rounded-lg hover:bg-purple-800 transition">
+                        Đăng ký tham gia
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="bg-gradient-to-r from-blue-900 to-blue-700 rounded-2xl p-8 md:p-12 text-white">
+                <div class="text-center">
+                    <h2 class="text-3xl font-bold mb-4">Đăng ký nhận bản tin</h2>
+                    <p class="text-blue-100 mb-8 max-w-2xl mx-auto">Nhận thông tin mới nhất về công nghệ ngân hàng, sự kiện và cập nhật từ Trung tâm CNTT Co-opBank</p>
+                    
+                    <div class="flex flex-col md:flex-row gap-4 max-w-md mx-auto">
+                        <input type="email" placeholder="Email của bạn" class="flex-1 px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300">
+                        <button class="bg-white text-blue-900 font-bold px-6 py-3 rounded-lg hover:bg-gray-100 transition">
+                            Đăng ký
+                        </button>
+                    </div>
+                    
+                    <p class="text-sm text-blue-200 mt-4">Chúng tôi cam kết bảo vệ thông tin cá nhân của bạn</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+                <div>
+                    <img src="images/download.jpg" alt="Co-opBank Logo" class="h-16 w-auto mb-6">
+                    <p class="mb-6 text-blue-200 leading-relaxed">Trung tâm Công nghệ Thông tin Co-opBank - Tiên phong trong chuyển đổi số ngành ngân hàng, mang đến những giải pháp công nghệ tiên tiến nhất.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-blue-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-700">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-blue-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-700">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="bg-blue-800 w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-700">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Liên kết nhanh</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-blue-200 hover:text-white">Trang chủ</a></li>
+                        <li><a href="about.html" class="text-blue-200 hover:text-white">Giới thiệu</a></li>
+                        <li><a href="services.html" class="text-blue-200 hover:text-white">Dịch vụ</a></li>
+                        <li><a href="solutions.html" class="text-blue-200 hover:text-white">Giải pháp</a></li>
+                        <li><a href="news.html" class="text-blue-200 hover:text-white">Tin tức</a></li>
+                        <li><a href="contact.html" class="text-blue-200 hover:text-white">Liên hệ</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Dịch vụ</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-blue-200 hover:text-white">Ngân hàng số</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white">Bảo mật thông tin</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white">Hệ thống Core Banking</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white">Trí tuệ nhân tạo</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white">Blockchain</a></li>
+                        <li><a href="#" class="text-blue-200 hover:text-white">Điện toán đám mây</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Đăng ký nhận bản tin</h3>
+                    <p class="text-blue-200 mb-4">Nhận thông tin mới nhất về công nghệ ngân hàng qua email của bạn.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Email của bạn" class="px-4 py-2 rounded-l-lg focus:outline-none text-gray-900 w-full">
+                        <button type="submit" class="bg-blue-800 px-4 rounded-r-lg hover:bg-blue-700">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-blue-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-blue-200 mb-4 md:mb-0">© 2023 Trung Tâm Công Nghệ Thông Tin Co-opBank. Bảo lưu mọi quyền.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-blue-200 hover:text-white">Chính sách bảo mật</a>
+                    <a href="#" class="text-blue-200 hover:text-white">Điều khoản sử dụng</a>
+                    <a href="#" class="text-blue-200 hover:text-white">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-8 right-8 bg-gradient-to-r from-blue-900 to-blue-700 text-white w-14 h-14 rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300 hover:scale-110">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html> 

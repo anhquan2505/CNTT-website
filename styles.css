@@ -1,0 +1,299 @@
+/* Co-opBank IT Center Website Styles */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Base Styles */
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Fix for margin-bottom issues - ensure proper spacing */
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    /* Ensure text is not clipped */
+    line-height: 1.3;
+    padding: 0.05em 0;
+    /* Better text rendering */
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+section {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Ensure proper spacing between sections */
+section + section {
+    margin-top: 0;
+}
+
+/* Fix for overlapping elements */
+.container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Ensure gradient text elements are properly positioned */
+.text-center .gradient-text {
+    position: relative;
+    z-index: 2;
+    /* Ensure proper text display */
+    display: inline-block;
+    line-height: 1.3;
+    padding: 0.1em 0;
+}
+
+/* Fix for text-center containers */
+.text-center {
+    /* Ensure container has enough space for text */
+    padding: 0.5em 0;
+    overflow: visible;
+}
+
+/* Fix for any white background interference */
+section .gradient-text {
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+}
+
+
+
+/* Gradient Backgrounds */
+.gradient-bg {
+    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%);
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* Fallback for browsers that don't support gradient text */
+    color: #1e40af;
+    /* Ensure proper rendering and prevent white background issues */
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    /* Force hardware acceleration */
+    transform: translateZ(0);
+    /* Ensure text is visible */
+    text-shadow: none;
+    /* Fix text clipping issues */
+    line-height: 1.2;
+    padding: 0.1em 0;
+    /* Ensure proper text rendering */
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Card Hover Effects */
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+}
+
+.news-card:hover .news-title {
+    color: #1e40af;
+}
+
+/* Animated Underline */
+.animated-underline {
+    position: relative;
+}
+
+.animated-underline:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background: linear-gradient(90deg, #1e40af 0%, #3b82f6 100%);
+    transition: width 0.3s ease;
+}
+
+.animated-underline:hover:after {
+    width: 100%;
+}
+
+/* Marquee Animation */
+.marquee {
+    animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* Floating Animation */
+.floating {
+    animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Glass Effect */
+.glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Text Shadow */
+.text-shadow {
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styles */
+.btn-primary {
+    background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px -5px rgba(30, 64, 175, 0.4);
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 2px solid #1e40af;
+    color: #1e40af;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: #1e40af;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Feature Icons */
+.feature-icon {
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+    border: 2px solid #3b82f6;
+}
+
+/* Stats Cards */
+.stats-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1e40af;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1e3a8a;
+}
+
+/* Loading Animation */
+.loaded {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+/* Responsive Design Enhancements */
+@media (max-width: 768px) {
+    .gradient-text {
+        background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        /* Fallback for browsers that don't support gradient text */
+        color: #1e40af;
+        /* Ensure proper rendering and prevent white background issues */
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        /* Force hardware acceleration */
+        transform: translateZ(0);
+        /* Ensure text is visible */
+        text-shadow: none;
+        /* Fix text clipping issues */
+        line-height: 1.2;
+        padding: 0.1em 0;
+        /* Ensure proper text rendering */
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    .card-hover:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Fix spacing issues on mobile */
+    .mb-16 {
+        margin-bottom: 3rem !important;
+    }
+    
+    .mb-12 {
+        margin-bottom: 2.5rem !important;
+    }
+    
+    .mb-8 {
+        margin-bottom: 2rem !important;
+    }
+    
+    .mb-6 {
+        margin-bottom: 1rem !important;
+    }
+    
+    .mb-4 {
+        margin-bottom: 1rem !important;
+    }
+}
+
+/* Focus States for Accessibility */
+button:focus,
+a:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #3b82f6;
+    outline-offset: 2px;
+}
+
+/* Print Styles */
+@media print {
+    .gradient-bg {
+        background: #1e40af !important;
+    }
+    
+    .gradient-text {
+        color: #1e40af !important;
+        -webkit-text-fill-color: #1e40af !important;
+    }
+    
+    .card-hover:hover {
+        transform: none !important;
+        box-shadow: none !important;
+    }
+} 
